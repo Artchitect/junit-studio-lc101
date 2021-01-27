@@ -38,6 +38,13 @@ public class BalancedBracketsTest {
         assertTrue(BalancedBrackets.hasBalancedBrackets("][]["));
     }
 
+    @Test
+    public void DragonFruit() {
+        assertFalse(BalancedBrackets.hasBalancedBrackets("[]["));
+    }
 
-
+    @Test
+    public void Kiwano() {
+        assertFalse(BalancedBrackets.hasBalancedBrackets("][]"));
+    }
 }
