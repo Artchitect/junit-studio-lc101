@@ -28,8 +28,15 @@ public class BalancedBracketsTest {
         assertTrue(BalancedBrackets.hasBalancedBrackets("]["));
     }
 
+    @Test
+    public void Apple() {
+        assertTrue(BalancedBrackets.hasBalancedBrackets("[][]"));
+    }
 
-
+    @Test
+    public void Orange() {
+        assertTrue(BalancedBrackets.hasBalancedBrackets("][]["));
+    }
 
 
 
