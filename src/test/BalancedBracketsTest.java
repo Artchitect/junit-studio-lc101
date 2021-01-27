@@ -9,7 +9,7 @@ public class BalancedBracketsTest {
 
     //TODO: add tests here
     @Test
-    public void onlyBracketsReturnsTrue() {
+    public void Grapes() {
         assertTrue(BalancedBrackets.hasBalancedBrackets("[]"));
     }
 
@@ -58,5 +58,13 @@ public class BalancedBracketsTest {
         assertTrue(BalancedBrackets.hasBalancedBrackets("][[]"));
     }
 
+    @Test
+    public void ScrewPine() {
+        assertFalse(BalancedBrackets.hasBalancedBrackets("][["));
+    }
 
+    @Test
+    public void Pineapple() {
+        assertTrue(BalancedBrackets.hasBalancedBrackets("]][["));
+    }
 }
