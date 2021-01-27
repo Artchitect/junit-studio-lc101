@@ -12,4 +12,25 @@ public class BalancedBracketsTest {
     public void onlyBracketsReturnsTrue() {
         assertTrue(BalancedBrackets.hasBalancedBrackets("[]"));
     }
+
+    @Test
+    public void Cantaloupe() {
+        assertFalse(BalancedBrackets.hasBalancedBrackets("[]]"));
+    }
+
+    @Test
+    public void Durian() {
+        assertFalse(BalancedBrackets.hasBalancedBrackets("[[]"));
+    }
+
+    @Test
+    public void Strawberry() {
+        assertTrue(BalancedBrackets.hasBalancedBrackets("]["));
+    }
+
+
+
+
+
+
 }
