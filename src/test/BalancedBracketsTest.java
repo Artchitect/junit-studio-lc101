@@ -47,4 +47,16 @@ public class BalancedBracketsTest {
     public void Kiwano() {
         assertFalse(BalancedBrackets.hasBalancedBrackets("][]"));
     }
+
+    @Test
+    public void Banana() {
+        assertTrue(BalancedBrackets.hasBalancedBrackets("[[]]"));
+    }
+
+    @Test
+    public void Kiwi() {
+        assertTrue(BalancedBrackets.hasBalancedBrackets("][[]"));
+    }
+
+
 }
